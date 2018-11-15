@@ -20,6 +20,11 @@ body{
 	min-height: 100vh;
 }
 
+.flex-container{
+	display: flex;
+	justify-content: center;
+}
+
 .hero .flex-container{
 	display: flex;
 	justify-content: flex-end;
@@ -40,14 +45,13 @@ body{
 
 .logo {
 	width: 100%;
-
 }
 
 .hero-title{
 	text-align: center;
 	font-family: Goldoni;
 	color: white;
-	font-size: 50px;
+	font-size: 3.125rem;
 }
 
 .hero .hero-arrow{
@@ -60,10 +64,43 @@ body{
 	color: white;
 }
 
+.main-header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
 .main-header ul{
 	list-style: none;
+	padding-inline-start: 0px;
+}
+
+.main-header ul:after
+{
+   content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #529600;
+    left: 0;
+    position: relative;
+    display: block;
+    top: 10px;
 }
 
 .main-nav{
 	font-family: Goldoni;
+	font-size: 1.56rem;
+
+}
+
+.main-nav li{
+	
+	padding-left:  2.05rem;
+	padding-right: 2.05rem;
+	
+}
+
+a {	
+	text-decoration:none; 	
+	color: #afafaf;
 }
